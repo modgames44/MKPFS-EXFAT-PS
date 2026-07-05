@@ -68,9 +68,7 @@ Diseñada para ser **rápida, fiable y fácil de usar**.
 
 > *Añade aquí las capturas de la ventana principal, la pestaña de conversión y el enviador de payloads.*
 
-![Ventana principal](docs/images/main_window.png)
-![Pestaña de conversión](docs/images/mkpsf.png)
-![Enviador de payloads](docs/images/payload.png)
+<img width="1254" height="848" alt="Captura de pantalla 2026-07-05 181013" src="https://github.com/user-attachments/assets/882dd1c7-5e02-4539-8939-6135ffcb6e39" />
 
 ---
 
