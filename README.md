@@ -17,6 +17,8 @@ La aplicación mantiene la funcionalidad de las herramientas originales mientras
 ## ✨ Características
 
 * ✅ Conversión de archivos **BIN → PFS**
+* ✅ Generador auto AMPR_emu.index
+* ✅ Generador manual AMPR_emu.index
 * ✅ Creación de unidades **exFAT** para PS5
 * ✅ Payload Sender integrado
 * ✅ Interfaz moderna
