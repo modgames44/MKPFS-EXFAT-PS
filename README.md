@@ -1,147 +1,128 @@
-# MKPSF & exFAT Builder All-in-One
+MKPSF & exFAT Builder All-in-One
+Una aplicación Todo en Uno para PS5 que integra MkPFS, PS5 exFAT Builder, AMPR index generator y Payload Sender en una única interfaz moderna e intuitiva.
 
-> Una aplicación **Todo en Uno** para PS5 que integra **MkPFS**, **PS5 exFAT Builder** y **Payload Sender** en una única interfaz moderna e intuitiva.
-
----
-
-## 📖 Descripción
-
+📖 Descripción
 Este proyecto nace con el objetivo de simplificar el flujo de trabajo de los usuarios de PS5.
 
-En lugar de utilizar varias aplicaciones independientes, **MKPSF & exFAT Builder All-in-One** reúne las funciones más utilizadas en una sola interfaz, permitiendo realizar todas las tareas desde una única ventana.
+En lugar de utilizar varias aplicaciones independientes, MKPSF & exFAT Builder All-in-One reúne las funciones más utilizadas en una sola interfaz, permitiendo realizar todas las tareas desde una única ventana.
 
 La aplicación mantiene la funcionalidad de las herramientas originales mientras ofrece una experiencia de usuario más rápida, organizada y sencilla.
 
----
+✨ Características
+✅ Conversión de archivos BIN → PFS (formatos .ffpfsc, .ffpfs y .exfat).
 
-## ✨ Características
+✅ Generador automático de ampr_emu.index al convertir (para juegos que lo requieran, compatible con emulación PS5).
 
-* ✅ Conversión de archivos **BIN → PFS**
-* ✅ Generador auto AMPR_emu.index
-* ✅ Generador manual AMPR_emu.index
-* ✅ Creación de unidades **exFAT** para PS5
-* ✅ Payload Sender integrado
-* ✅ Interfaz moderna
-* ✅ Diseño limpio y fácil de usar
-* ✅ Sin necesidad de abrir múltiples programas
-* ✅ Compatible con Windows
+✅ Generador manual de ampr_emu.index (independiente de la conversión, útil para usuarios que usan juegos en carpeta).
 
----
+✅ Creación de unidades exFAT para PS5 (nativo, sin dependencias externas).
 
-## 🖥️ Módulos incluidos
+✅ Payload Sender integrado (envío rápido de payloads a la consola).
 
-### 📦 MKPSF Converter
+✅ Interfaz moderna y responsiva (PyQt6).
 
-Convierte archivos `.BIN` al formato `.PFS` utilizado por PS5.
+✅ Diseño limpio y fácil de usar.
 
----
+✅ Sin necesidad de abrir múltiples programas.
 
-### 💾 exFAT Builder
+✅ Compatibilidad con Windows (ejecutable autónomo).
 
-Permite preparar dispositivos USB en formato exFAT para su uso con PS5.
+🖥️ Módulos incluidos
+📦 MKPSF Converter
+Convierte archivos y carpetas al formato .ffpfsc (comprimido), .ffpfs (sin comprimir) y .exfat (imagen exFAT). Incluye:
 
----
+Generación automática de ampr_emu.index durante la conversión (para formatos que lo soporten).
 
-### 🚀 Payload Sender
+Generación manual mediante un botón específico (sin depender de la carpeta fakelib).
 
-Envía payloads directamente a la consola PS5 desde la misma aplicación.
+💾 exFAT Builder
+Permite generar imágenes .exfat a partir de cualquier carpeta, optimizadas para su uso en PS5.
 
----
+🚀 Payload Sender
+Envía payloads (.js, .elf, .bin, etc.) directamente a la consola PS5 desde la misma aplicación.
 
-## 📷 Capturas
+📄 Generador AMPR_emu.index
+Automático – se activa al convertir si el checkbox está marcado, generando el índice necesario para la emulación PS5.
 
-*(Añade aquí las imágenes de la aplicación.)*
+Manual – genera el índice en la carpeta del juego, incluso si no contiene el archivo fakelib/libSceAmpr.sprx (ideal para usuarios que mantienen juegos en formato carpeta sin empaquetar).
 
-```text
+📷 Capturas
+(Puedes añadir aquí las imágenes de la aplicación según tu proyecto)
+
 /docs/images/main_window.png
+
 /docs/images/mkpsf.png
+
 /docs/images/exfat.png
+
 /docs/images/payload.png
-```
 
----
+⚙️ Requisitos
+Windows 10 / Windows 11
 
-## ⚙️ Requisitos
+.NET Runtime (si aplica, solo para algunos payloads)
 
-* Windows 10 / Windows 11
-* .NET Runtime (si aplica)
-* Permisos de administrador para operaciones sobre unidades USB
+Permisos de administrador (para operaciones de bajo nivel)
 
----
+🚀 Uso
+Ejecuta la aplicación.
 
-## 🚀 Uso
+Selecciona la herramienta que deseas utilizar (Conversión, Payload Sender o Generador de índices).
 
-1. Ejecuta la aplicación.
-2. Selecciona la herramienta que deseas utilizar.
-3. Sigue las instrucciones mostradas en pantalla.
-4. Disfruta de una experiencia unificada.
+Sigue las instrucciones mostradas en pantalla.
 
----
+Disfruta de una experiencia unificada.
 
-## 🙏 Créditos
+🙏 Créditos
+Este proyecto no habría sido posible sin el excelente trabajo de los desarrolladores originales y colaboradores.
 
-Este proyecto no habría sido posible sin el excelente trabajo de los desarrolladores originales.
+MkPFS – PSBrew
 
-### MkPFS
+PS5 exFAT Builder – kerrdec97
 
-PSBrew
+Colaboración y mejoras – Darkmors (por su valiosa ayuda en la integración y funcionalidades adicionales)
 
-https://github.com/PSBrew/MkPFS
-
-### PS5 exFAT Builder
-
-kerrdec97
-
-https://github.com/kerrdec97/ps5-exfat-builder
-
----
-
-## ❤️ Sobre este proyecto
-
-El objetivo de este proyecto **no es reemplazar** las herramientas originales.
+❤️ Sobre este proyecto
+El objetivo de este proyecto no es reemplazar las herramientas originales.
 
 Su finalidad es ofrecer una interfaz unificada, moderna y más cómoda que permita acceder a todas sus funciones desde una única aplicación.
 
 Todo el mérito por las herramientas base pertenece a sus respectivos autores.
 
----
-
-## 📄 Licencia
-
+📄 Licencia
 Consulta la licencia de cada proyecto original.
 
 Este repositorio únicamente integra dichas herramientas en una interfaz unificada y no modifica la autoría de los proyectos originales.
 
----
-
-## ⭐ Soporte
-
+⭐ Soporte
 Si este proyecto te resulta útil:
 
-* ⭐ Dale una estrella al repositorio.
-* 🐛 Reporta errores mediante *Issues*.
-* 💡 Comparte ideas para futuras funciones.
+⭐ Dale una estrella al repositorio.
 
----
+🐛 Reporta errores mediante Issues.
 
-## 📌 Roadmap
+💡 Comparte ideas para futuras funciones.
 
-* [x] Integración de MkPFS
-* [x] Integración de exFAT Builder
-* [x] Payload Sender
-* [x] Interfaz unificada
-* [ ] Soporte para actualizaciones automáticas
-* [ ] Modo oscuro
-* [ ] Múltiples idiomas
-* [ ] Mejoras de rendimiento
+📌 Roadmap
+Integración de MkPFS
 
----
+Integración de exFAT Builder
 
-## 📢 Aviso
+Payload Sender
 
-Este software se proporciona **"tal cual"**, sin garantías de ningún tipo.
+Generador automático y manual de ampr_emu.index
+
+Soporte para actualizaciones automáticas
+
+Modo oscuro
+
+Múltiples idiomas
+
+Mejoras de rendimiento
+
+📢 Aviso
+Este software se proporciona "tal cual", sin garantías de ningún tipo.
 
 El usuario es responsable del uso que haga de esta aplicación.
 
 Respeta siempre las leyes y regulaciones aplicables en tu país.
-
